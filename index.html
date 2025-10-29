@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Augusto de Campos, Augusto de Campos, 'sos', 1983</title>
+
+<style>
+  /* --- BASIC PAGE SETUP --- */
+  body {
+    margin: 0;
+    background-color: black;
+    color: #f8e86d;
+    font-family: "Helvetica Neue", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  /* --- POEM CONTAINER --- */
+  .poem {
+    position: relative;
+    width: 550px;
+    height: 550px;
+  }
+
+  /* --- EACH CIRCLE (LINE OF THE POEM) --- */
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* --- WORDS --- */
+  .word {
+    position: absolute;
+    transform-origin: center;
+    transition: transform 0.4s ease;
+    cursor: default;
+  }
+
+  /* --- WORD HOVER EFFECT (grows slightly) --- */
+  .word:hover {
+    transform: scale(1.3) translateX(0);
+  }
+
+  /* --- ROTATION ON HOVER --- */
+  .poem:hover .circle:nth-child(1) {
+    animation: spin-right 14s linear infinite;
+  }
+  .poem:hover .circle:nth-child(2) {
+    animation: spin-left 14s linear infinite;
+  }
+  .poem:hover .circle:nth-child(3) {
+    animation: spin-right 14s linear infinite;
+  }
+  .poem:hover .circle:nth-child(4) {
+    animation: spin-left 14s linear infinite;
+  }
+  .poem:hover .circle:nth-child(5) {
+    animation: spin-right 14s linear infinite;
+  }
+  .poem:hover .circle:nth-child(6) {
+    animation: spin-left 14s linear infinite;
+  }
+  .poem:hover .circle:nth-child(7) {
+    animation: spin-right 14s linear infinite;
+  }
+  .poem:hover .circle:nth-child(8) {
+    animation: spin-left 14s linear infinite;
+  }
+  .poem:hover .circle:nth-child(9) {
+    animation: spin-right 14s linear infinite;
+  }
+  .poem:hover .circle:nth-child(10) {
+    animation: spin-left 14s linear infinite;
+  }
+
+  /* --- ANIMATIONS --- */
+  @keyframes spin-right {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+
+  @keyframes spin-left {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(-360deg); }
+  }
+
+</style>
+</head>
+
+<body>
+  <div class="poem">
+
+    <!-- 1 -->
+    <div class="circle" style="width: 420px; height: 420px;">
+      <span class="word" style="transform: rotate(0deg) translateX(210px);">I</span>
+      <span class="word" style="transform: rotate(30deg) translateX(210px);">ego</span>
+      <span class="word" style="transform: rotate(60deg) translateX(210px);">eu</span>
+      <span class="word" style="transform: rotate(90deg) translateX(210px);">R</span>
+      <span class="word" style="transform: rotate(120deg) translateX(210px);">ich</span>
+      <span class="word" style="transform: rotate(150deg) translateX(210px);">io</span>
+      <span class="word" style="transform: rotate(180deg) translateX(210px);">je</span>
+      <span class="word" style="transform: rotate(210deg) translateX(210px);">yo</span>
+    </div>
+
+    <!-- 2 -->
+    <div class="circle" style="width: 380px; height: 380px;">
+      <span class="word" style="transform: rotate(0deg) translateX(190px);">sós</span>
+      <span class="word" style="transform: rotate(120deg) translateX(190px);">pós</span>
+      <span class="word" style="transform: rotate(240deg) translateX(190px);">nós</span>
+    </div>
+
+    <!-- 3 -->
+    <div class="circle" style="width: 340px; height: 340px;">
+      <span class="word" style="transform: rotate(0deg) translateX(170px);">que</span>
+      <span class="word" style="transform: rotate(72deg) translateX(170px);">faremos</span>
+      <span class="word" style="transform: rotate(144deg) translateX(170px);">após</span>
+      <span class="word" style="transform: rotate(216deg) translateX(170px);">?</span>
+    </div>
+
+    <!-- 4 -->
+    <div class="circle" style="width: 300px; height: 300px;">
+      <span class="word" style="transform: rotate(0deg) translateX(150px);">sem</span>
+      <span class="word" style="transform: rotate(90deg) translateX(150px);">sol</span>
+      <span class="word" style="transform: rotate(180deg) translateX(150px);">na</span>
+      <span class="word" style="transform: rotate(270deg) translateX(150px);">noite</span>
+    </div>
+
+    <!-- 5 -->
+    <div class="circle" style="width: 260px; height: 260px;">
+      <span class="word" style="transform: rotate(0deg) translateX(130px);">vagaremos</span>
+      <span class="word" style="transform: rotate(180deg) translateX(130px);">que</span>
+    </div>
+
+    <!-- 6 -->
+    <div class="circle" style="width: 220px; height: 220px;">
+      <span class="word" style="transform: rotate(0deg) translateX(110px);">sem</span>
+      <span class="word" style="transform: rotate(120deg) translateX(110px);">voz</span>
+      <span class="word" style="transform: rotate(240deg) translateX(110px);"> </span>
+    </div>
+
+    <!-- 7 -->
+    <div class="circle" style="width: 180px; height: 180px;">
+      <span class="word" style="transform: rotate(0deg) translateX(90px);">sem</span>
+      <span class="word" style="transform: rotate(120deg) translateX(90px);">amor</span>
+      <span class="word" style="transform: rotate(240deg) translateX(90px);"> </span>
+    </div>
+
+    <!-- 8 -->
+    <div class="circle" style="width: 140px; height: 140px;">
+      <span class="word" style="transform: rotate(0deg) translateX(70px);">sem</span>
+      <span class="word" style="transform: rotate(120deg) translateX(70px);">mãe</span>
+      <span class="word" style="transform: rotate(240deg) translateX(70px);"> </span>
+    </div>
+
+    <!-- 9 -->
+    <div class="circle" style="width: 100px; height: 100px;">
+      <span class="word" style="transform: rotate(0deg) translateX(50px);">sem</span>
+      <span class="word" style="transform: rotate(120deg) translateX(50px);">pai</span>
+      <span class="word" style="transform: rotate(240deg) translateX(50px);"> </span>
+    </div>
+
+    <!-- 10 -->
+    <div class="circle" style="width: 60px; height: 60px;">
+      <span class="word" style="transform: rotate(0deg) translateX(30px);">sós</span>
+      <span class="word" style="transform: rotate(120deg) translateX(30px);">siles</span>
+      <span class="word" style="transform: rotate(240deg) translateX(30px);">sós</span>
+    </div>
+
+  </div>
+</body>
+</html>
+
